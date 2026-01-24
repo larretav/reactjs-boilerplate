@@ -1,12 +1,12 @@
 import { queryClient } from "@/lib/queryClient";
 import { queryKeys } from "@/lib/queryKeys";
-import { createToDo } from "@/services/todos/create-todo.service";
+import { updateToDo } from "@/services/todos/update-todo.service";
 import { ToDoReq } from "@/types/todos/todo.req";
 import { useMutation } from "@tanstack/react-query";
 
-export const useCreateToDo = useMutation({
+export const useUpdateToDo = () => useMutation({
   // Agregar tipado
-  mutationFn: (payload: ToDoReq) => createToDo(payload),
+  mutationFn: ({ id, payload }: { id: string | number, payload: Partial<ToDoReq> }) => updateToDo(id, payload),
   onSuccess: () => {
     queryClient.invalidateQueries({
       queryKey: queryKeys.todos.all,

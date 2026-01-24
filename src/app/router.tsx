@@ -1,4 +1,3 @@
-import { CategoriesPage } from "@/pages/categories/CategoriesPage";
 import { NotFoundPage } from "@/pages/not-found/NotFoundPage";
 import { WelcomePage } from "@/pages/welcome/WelcomePage";
 import { createBrowserRouter } from "react-router-dom";
@@ -13,10 +12,6 @@ export const router = createBrowserRouter([
         path: "/",
         element: <WelcomePage />,
       },
-      {
-        path: "/categories",
-        element: <CategoriesPage />,
-      }
     ],
   },
 ])

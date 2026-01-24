@@ -1,0 +1,146 @@
+{
+  "todos": [
+    {
+      "id": "a101",
+      "titulo": "Revisar correos pendientes",
+      "descripcion": "Leer y responder correos importantes del día",
+      "estado": 2,
+      "fecha_creado": "2026-01-13T08:20:00Z",
+      "fecha": "2026-01-13T08:20:00Z",
+      "state": "done"
+    },
+    {
+      "id": "a102",
+      "titulo": "Preparar presentación",
+      "descripcion": "Crear diapositivas para la reunión con el equipo",
+      "estado": 2,
+      "fecha_creado": "2026-01-11T10:00:00Z"
+    },
+    {
+      "id": "a103",
+      "titulo": "Pagar servicios",
+      "descripcion": "Pagar luz, agua e internet antes de la fecha límite",
+      "estado": 2,
+      "fecha_creado": "2026-01-09T18:30:00Z"
+    },
+    {
+      "id": "a104",
+      "titulo": "Refactorizar código",
+      "descripcion": "Mejorar la estructura del módulo de autenticación",
+      "estado": 2,
+      "fecha_creado": "2026-01-07T15:10:00Z"
+    },
+    {
+      "id": "a105",
+      "titulo": "Hacer backup",
+      "descripcion": "Respaldar base de datos del proyecto",
+      "estado": 2,
+      "fecha_creado": "2026-01-06T22:00:00Z"
+    },
+    {
+      "id": "a106",
+      "titulo": "Planificar sprint",
+      "descripcion": "Definir tareas y objetivos del próximo sprint",
+      "estado": 2,
+      "fecha_creado": "2026-01-14T09:00:00Z"
+    },
+    {
+      "id": "a107",
+      "titulo": "Actualizar dependencias",
+      "descripcion": "Actualizar librerías y verificar compatibilidad",
+      "estado": 1,
+      "fecha_creado": "2026-01-04T13:40:00Z"
+    },
+    {
+      "id": "a108",
+      "titulo": "Revisar PRs",
+      "descripcion": "Revisar pull requests pendientes en el repositorio",
+      "estado": 0,
+      "fecha_creado": "2026-01-15T11:25:00Z"
+    },
+    {
+      "id": "a109",
+      "titulo": "Escribir tests",
+      "descripcion": "Agregar pruebas unitarias al módulo de usuarios",
+      "estado": 1,
+      "fecha_creado": "2026-01-03T17:50:00Z"
+    },
+    {
+      "id": "a110",
+      "titulo": "Deploy a producción",
+      "descripcion": "Publicar la nueva versión de la aplicación",
+      "estado": 0,
+      "fecha_creado": "2026-01-16T07:45:00Z"
+    },
+    {
+      "id": "a111",
+      "titulo": "Organizar escritorio",
+      "descripcion": "Ordenar archivos y limpiar el escritorio de trabajo",
+      "estado": 0,
+      "fecha_creado": "2026-01-17T08:10:00Z"
+    },
+    {
+      "id": "a112",
+      "titulo": "Investigar nueva herramienta",
+      "descripcion": "Evaluar herramientas para gestión de proyectos",
+      "estado": 1,
+      "fecha_creado": "2026-01-16T14:35:00Z"
+    },
+    {
+      "id": "a113",
+      "titulo": "Agendar cita médica",
+      "descripcion": "Llamar para agendar chequeo anual",
+      "estado": 0,
+      "fecha_creado": "2026-01-18T09:00:00Z"
+    },
+    {
+      "id": "a114",
+      "titulo": "Diseñar mockups",
+      "descripcion": "Crear mockups de la nueva funcionalidad",
+      "estado": 1,
+      "fecha_creado": "2026-01-15T16:20:00Z"
+    },
+    {
+      "id": "a115",
+      "titulo": "Limpiar repositorio",
+      "descripcion": "Eliminar ramas obsoletas y organizar issues",
+      "estado": 2,
+      "fecha_creado": "2026-01-14T12:45:00Z"
+    },
+    {
+      "id": "a116",
+      "titulo": "Configurar CI/CD",
+      "descripcion": "Configurar pipeline de integración continua",
+      "estado": 1,
+      "fecha_creado": "2026-01-13T18:00:00Z"
+    },
+    {
+      "id": "a117",
+      "titulo": "Revisar métricas",
+      "descripcion": "Analizar métricas de rendimiento de la app",
+      "estado": 0,
+      "fecha_creado": "2026-01-19T10:30:00Z"
+    },
+    {
+      "id": "a118",
+      "titulo": "Documentar API",
+      "descripcion": "Completar documentación Swagger/OpenAPI",
+      "estado": 1,
+      "fecha_creado": "2026-01-12T11:50:00Z"
+    },
+    {
+      "id": "a119",
+      "titulo": "Optimizar consultas",
+      "descripcion": "Mejorar performance de consultas SQL",
+      "estado": 2,
+      "fecha_creado": "2026-01-11T15:40:00Z"
+    },
+    {
+      "id": "a120",
+      "titulo": "Reunión retrospectiva",
+      "descripcion": "Participar en la retrospectiva del sprint",
+      "estado": 0,
+      "fecha_creado": "2026-01-20T09:15:00Z"
+    }
+  ]
+}

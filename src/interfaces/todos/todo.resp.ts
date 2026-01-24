@@ -3,5 +3,5 @@ export interface IToDoResp {
   titulo: string;
   descripcion: string;
   estado: number;
-  fecha: string;
+  fecha_creado: string;
 }

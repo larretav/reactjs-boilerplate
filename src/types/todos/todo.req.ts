@@ -1,4 +1,4 @@
-export interface ToDoReq {
+export type ToDoReq = {
   id: string;
   titulo: string;
   descripcion: string;

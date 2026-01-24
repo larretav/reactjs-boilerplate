@@ -12,9 +12,9 @@ baseApi.interceptors.request.use(config => {
 
 
 baseApi.interceptors.response.use(
-  (response) => response.data,
+  (response) => response,
   (error) => {
     // Manejo global de errores 
-    return Promise.reject(error.response.data)
+    return Promise.reject(error);
   }
 )
