@@ -4,7 +4,7 @@
       "id": "a101",
       "titulo": "Revisar correos pendientes",
       "descripcion": "Leer y responder correos importantes del día",
-      "estado": 2,
+      "estado": 3,
       "fecha_creado": "2026-01-13T08:20:00Z",
       "fecha": "2026-01-13T08:20:00Z",
       "state": "done"
@@ -48,14 +48,14 @@
       "id": "a107",
       "titulo": "Actualizar dependencias",
       "descripcion": "Actualizar librerías y verificar compatibilidad",
-      "estado": 1,
+      "estado": 2,
       "fecha_creado": "2026-01-04T13:40:00Z"
     },
     {
       "id": "a108",
       "titulo": "Revisar PRs",
       "descripcion": "Revisar pull requests pendientes en el repositorio",
-      "estado": 0,
+      "estado": 2,
       "fecha_creado": "2026-01-15T11:25:00Z"
     },
     {
@@ -69,14 +69,14 @@
       "id": "a110",
       "titulo": "Deploy a producción",
       "descripcion": "Publicar la nueva versión de la aplicación",
-      "estado": 0,
+      "estado": 3,
       "fecha_creado": "2026-01-16T07:45:00Z"
     },
     {
       "id": "a111",
       "titulo": "Organizar escritorio",
       "descripcion": "Ordenar archivos y limpiar el escritorio de trabajo",
-      "estado": 0,
+      "estado": 2,
       "fecha_creado": "2026-01-17T08:10:00Z"
     },
     {
@@ -104,7 +104,7 @@
       "id": "a115",
       "titulo": "Limpiar repositorio",
       "descripcion": "Eliminar ramas obsoletas y organizar issues",
-      "estado": 2,
+      "estado": 3,
       "fecha_creado": "2026-01-14T12:45:00Z"
     },
     {
@@ -118,7 +118,7 @@
       "id": "a117",
       "titulo": "Revisar métricas",
       "descripcion": "Analizar métricas de rendimiento de la app",
-      "estado": 0,
+      "estado": 3,
       "fecha_creado": "2026-01-19T10:30:00Z"
     },
     {
@@ -132,14 +132,14 @@
       "id": "a119",
       "titulo": "Optimizar consultas",
       "descripcion": "Mejorar performance de consultas SQL",
-      "estado": 2,
+      "estado": 3,
       "fecha_creado": "2026-01-11T15:40:00Z"
     },
     {
       "id": "a120",
       "titulo": "Reunión retrospectiva",
       "descripcion": "Participar en la retrospectiva del sprint",
-      "estado": 0,
+      "estado": 1,
       "fecha_creado": "2026-01-20T09:15:00Z"
     }
   ]
