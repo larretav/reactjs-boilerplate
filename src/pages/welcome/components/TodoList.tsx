@@ -29,7 +29,7 @@ export const TodoList = () => {
             })}></span>{todo.title}</CardHeader>
             <CardBody className="text-foreground-500">{todo.description}</CardBody>
           </Card>
-          <ActionButtons todo={todo} />
+          <ActionButtons todo={todo} className="!opacity-100 z-50" />
         </div>)}
       </div>}
     </>
@@ -46,7 +46,7 @@ const ActionButtons = ({ todo, className }: { todo: ToDo; className?: string }) 
   }
 
   return (
-    <div className={cn("sm:hidden gap-1 justify-end p-2 absolute bottom-0 right-0 sm:group-hover:flex", className)}>
+    <div className={cn("flex gap-1 justify-end p-2 absolute bottom-0 right-0 sm:hidden sm:group-hover:flex", className)}>
       {!todo.isDeleted && <>
         {(todo.isPending || todo.isDone) && <IconButton radius="sm" color="primary" isLoading={isPending} onPress={() => markAs(todo.id, 'in-progress')}><Circle size="1rem" /></IconButton>}
         {todo.isInProgress && <IconButton radius="sm" color="success" isLoading={isPending} onPress={() => markAs(todo.id, 'done')}><Check size="1rem" /></IconButton>}
