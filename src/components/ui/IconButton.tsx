@@ -1,6 +1,6 @@
-import type { ButtonProps } from "@heroui/button";
+import type { ButtonProps } from "@heroui/react";
 
-import { Button } from "@heroui/button";
+import { Button } from "@heroui/react";
 import { forwardRef } from "react";
 
 const IconButton = forwardRef<HTMLButtonElement, ButtonProps>(({ children, ...props }: ButtonProps, ref) => {

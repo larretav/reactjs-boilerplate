@@ -69,7 +69,7 @@
       "id": "a110",
       "titulo": "Deploy a producción",
       "descripcion": "Publicar la nueva versión de la aplicación",
-      "estado": 3,
+      "estado": 0,
       "fecha_creado": "2026-01-16T07:45:00Z"
     },
     {

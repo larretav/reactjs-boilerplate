@@ -3,16 +3,12 @@ import { useToDos } from '@/hooks/todos/useToDo';
 import { useUpdateToDo } from '@/hooks/todos/useUpdateToDo';
 import { mapReqTodo } from '@/mappers/todos/todo.req.mapper';
 import { ToDo, ToDoState } from '@/types/todos/todo';
-import { cn } from '@/utils/general';
-import { Card, CardHeader, CardBody } from '@heroui/card';
-import { Spinner } from '@heroui/spinner';
+import { Spinner, Card, CardHeader, CardBody, cn } from '@heroui/react';
 import { Check, Circle, Trash2 } from 'lucide-react';
 
 export const TodoList = () => {
 
-
   const { data, isFetching, error } = useToDos();
-
 
   return (
     <>
@@ -29,7 +25,7 @@ export const TodoList = () => {
             })}></span>{todo.title}</CardHeader>
             <CardBody className="text-foreground-500">{todo.description}</CardBody>
           </Card>
-          <ActionButtons todo={todo} className="!opacity-100 z-50" />
+          <ActionButtons todo={todo} className="!opacity-100 z-10" />
         </div>)}
       </div>}
     </>

@@ -3,7 +3,7 @@ import {
   Navbar as HeroUINavbar,
   NavbarContent,
   NavbarItem,
-} from "@heroui/navbar";
+} from "@heroui/react";
 
 import { ThemeSwitch } from "@/components/ui/ThemeSwitch";
 
