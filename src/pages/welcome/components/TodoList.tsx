@@ -2,7 +2,7 @@ import { IconButton } from '@/components/ui/IconButton';
 import { useToDos } from '@/hooks/todos/useToDo';
 import { useUpdateToDo } from '@/hooks/todos/useUpdateToDo';
 import { mapReqTodo } from '@/mappers/todos/todo.req.mapper';
-import { ToDo, ToDoState } from '@/types/todos/todo';
+import { ToDo, ToDoStatus } from '@/types/todos/todo';
 import { Spinner, Card, CardHeader, CardBody, cn } from '@heroui/react';
 import { Check, Circle, Trash2 } from 'lucide-react';
 
@@ -37,8 +37,8 @@ const ActionButtons = ({ todo, className }: { todo: ToDo; className?: string }) 
 
   const { mutate, isPending } = useUpdateToDo();
 
-  const markAs = (id: string, state: ToDoState) => {
-    mutate({ id, payload: mapReqTodo({ state }) });
+  const markAs = (id: string, state: ToDoStatus) => {
+    mutate({ id, payload: mapReqTodo({ status: state }) });
   }
 
   return (

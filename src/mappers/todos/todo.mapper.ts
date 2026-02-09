@@ -1,5 +1,13 @@
 import { IToDoResp } from "@/interfaces/todos/todo.resp";
-import { ToDo, ToDoState } from "@/types/todos/todo";
+import { ToDo, ToDoStatus } from "@/types/todos/todo";
+
+
+export const ToDoStatusFromApi: Record<number, ToDoStatus> = {
+  0: "pending",
+  1: "in-progress",
+  2: "done",
+  3: "deleted",
+};
 
 export const mapTodo = (todo: IToDoResp): ToDo => {
   return {
@@ -7,7 +15,8 @@ export const mapTodo = (todo: IToDoResp): ToDo => {
     title: todo.titulo,
     description: todo.descripcion,
     date: todo.fecha_creado,
-    state: getState(todo.estado),
+    status: getState(todo.estado),
+    statusNumber: todo.estado,
     isPending: isPending(todo.estado),
     isInProgress: isInProgress(todo.estado),
     isDone: isDone(todo.estado),
@@ -15,15 +24,27 @@ export const mapTodo = (todo: IToDoResp): ToDo => {
   }
 }
 
-const getState = (state: number): ToDoState => {
-  if (state === 0) return 'pending';
-  if (state === 1) return 'in-progress';
-  if (state === 2) return 'done';
-  if (state === 3) return 'deleted';
-  return 'pending';
+const getState = (status: number): ToDoStatus => {
+  return ToDoStatusFromApi[status] ?? "pending";
 }
 
 const isPending = (status: number) => status === 0;
 const isInProgress = (status: number) => status === 1;
 const isDone = (status: number) => status === 2;
 const isDeleted = (status: number) => status === 3;
+
+
+const mapTodoObject = (todo: Pick<ToDo, "title" | "description" | "status" >): ToDo => {
+  return {
+  id: "",
+  title: "",
+  description: "",
+  status: "pending",
+  statusNumber: 0,
+  isPending: false,
+  isDone: false,
+  isInProgress: false,
+  isDeleted: false,
+  date: ""
+}
+}

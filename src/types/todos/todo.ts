@@ -1,11 +1,13 @@
 
-import { todoStates } from '../../constants/todo-states.const';
+
+export type ToDoStatus = "pending" | "in-progress" | "done" | "deleted";
 
 export type ToDo = {
   id: string;
   title: string;
   description: string;
-  state: ToDoState;
+  status: ToDoStatus;
+  statusNumber: number;
   isPending: boolean;
   isDone: boolean;
   isInProgress: boolean;
@@ -13,5 +15,4 @@ export type ToDo = {
   date: string;
 }
 
-export type ToDoState = keyof typeof todoStates;
 

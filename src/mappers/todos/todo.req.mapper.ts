@@ -1,14 +1,14 @@
-import { todoStates } from "@/constants/todo-states.const";
 import { ToDo } from "@/types/todos/todo";
 import { ToDoReq } from "@/types/todos/todo.req";
 
-export const mapReqTodo = (todo: Partial<ToDo>): Partial<ToDoReq> => {
+
+export const mapReqTodo = (todo: Pick<ToDo, "title" | "description" | "status">): ToDoReq => {
   return {
-    id: todo.id,
+    id: new Date().getTime().toString(), // El body no debe contener el id
     titulo: todo.title,
     descripcion: todo.description,
-    fecha: todo.date,
-    estado: todo.state && todoStates[todo.state],
+    fecha: new Date().toISOString(), // El body no debe contener la fecha de creación
+    estado: todo.status,
   }
 }
 
