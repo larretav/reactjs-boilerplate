@@ -1,6 +1,7 @@
 import { IToDoResp } from "@/interfaces/todos/todo.resp";
 import { ToDo, ToDoStatus } from "@/types/todos/todo";
 
+type TodoObject = Pick<ToDo, "title" | "description" | "status">;
 
 export const ToDoStatusFromApi: Record<number, ToDoStatus> = {
   0: "pending",
@@ -34,17 +35,23 @@ const isDone = (status: number) => status === 2;
 const isDeleted = (status: number) => status === 3;
 
 
-const mapTodoObject = (todo: Pick<ToDo, "title" | "description" | "status" >): ToDo => {
+export const mapTodoObject = (todo: TodoObject): ToDo => {
   return {
-  id: "",
-  title: "",
-  description: "",
-  status: "pending",
-  statusNumber: 0,
-  isPending: false,
-  isDone: false,
-  isInProgress: false,
-  isDeleted: false,
-  date: ""
-}
+    id: "",
+    title: todo.title,
+    description: todo.description,
+    status: todo.status,
+    statusNumber: 0,
+    isPending: false,
+    isDone: false,
+    isInProgress: false,
+    isDeleted: false,
+    date: new Date().toISOString(),
+    status: getState(todo.estado),
+    statusNumber: todo.estado,
+    isPending: isPending(todo.estado),
+    isInProgress: isInProgress(todo.estado),
+    isDone: isDone(todo.estado),
+    isDeleted: isDeleted(todo.estado),
+  }
 }
